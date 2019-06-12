@@ -1,0 +1,21 @@
+>> The Let
+let dog_name = 'cujo';              ----
+dog_name = 'dogo';                  cujo    <---- Step 1
+                                    ----
+                                    dogo    <---- strp 2
+                                    ----
+JS doen't replace the exiting memory location's address with new value, but assigns a new value to new memory location and assigns the same variable name to it. And the cujo gets garbae ge collected
+
+>> The const
+const pi = 3.1414;
+- We cannot re-assign a new valu to pi just like we did above for let key word.
+
+------------------------------------
+Variable names and naming conventions
+-------------------------------------
+- Variable name should not be a keyword like var, let, const
+- Variable name should not start with numerics          -> 2abhi, variable2
+- Only $ and _ are allowed to be in variable name       -> $, _, abhi_lash
+- Camel casing is most recommended                      -> myDogName
+- Snake case is also allowed                            -> my_dog_name
+- Kebab case is not encouraged                          -> my-dog-name

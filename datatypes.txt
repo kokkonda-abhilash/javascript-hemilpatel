@@ -1,0 +1,56 @@
+                                                            Data types
+                                                            ----------
+
+There are two buckets of datatypes
+1. Primitive data types (Single value)
+    - null
+    - undefined
+    - string
+    - number
+    - boolean
+    - symbol
+2. Complex or reference data types (Multiple values)
+    - array
+    - object
+    - function
+    - set/weakset
+    - map/weakmap
+    - date
+
+>> Null and undefined
+1. Undefined
+    {}    let my_dog_name;
+        console.log(my_dog_name);       // Undefined
+        console.log(whatever)           // Undefined error
+
+    ** Undefined is a data type in java script**
+
+    Lets use typeof operator to check the datatype of the undefined variable
+        console.log(typeof (my_dog_name));  // undefined
+        my_dog_name = 'cujo';
+        console.log(typeof (my_dog_name));  // string
+    Lets check the wierd behaviour of const with undefined
+        const my_dog_name;
+        console.log(my_dog_name)            // undefined
+        console.log(typeof (my_dog_name))   // undefined
+        my_dog_name = 'dojo';               // Assignment error
+        console.log(my_dog_name);
+
+2. null
+    ** null is the data type of an object
+    let my_dog_name = null;
+    console.log(typeof (my_dog_name));      // object
+    console.log(my_dog_name);               // null
+
+3. String
+        let my_dog_name = 'cujo';
+        console.log(typeof (my_dog_name));      // string
+    In JS theoretically, there is no limit to the lenght of the string
+    JS can allow very long strings
+    ** Strings in JS are immutable - we cannot change the value of the string, instead we need to assign in a new line
+Template strings:
+    Template strings provides a flexible way of constructing strings. In template string whatever goes into the ${}, their data types are unaltered
+    let a = 10;
+    let b = 20;
+    let result = `The result is ${a + b}`;
+    console.log(result);                // The result is 30
